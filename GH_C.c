@@ -116,7 +116,7 @@ struct BigInt getnum(void)
 struct BigInt addnum(struct BigInt a, struct BigInt b, int n)
 {
 	struct BigInt x;
-	char t;
+	int t;
 	bool toadd = 0;
 	if (a.len == 1 && *a.val == 0) return b; // if a == 0
 	x.len = a.len + n > b.len ? a.len + n : b.len;
